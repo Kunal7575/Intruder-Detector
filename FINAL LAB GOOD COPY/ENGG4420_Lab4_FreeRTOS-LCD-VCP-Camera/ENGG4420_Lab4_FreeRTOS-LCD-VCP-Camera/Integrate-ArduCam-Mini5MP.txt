@@ -1,0 +1,31 @@
+/***********
+ *	Kevin Dong created on 2019-10-31 at University of Guelph
+ *		to serve as base project for ENGG4420 & ENGG6550  
+ */
+
+1.	SPI connection:
+Start from TS_FreeRTOS_LCD_VCP.ioc
+Enable SPI4: 
+-	PE2 --- SCK
+-	PE3 --- SS
+-	PE5 --- MISO
+-	PE6 --- MOSI
+-	5V  --- VCC
+-	GND --- GND
+
+To run the camera with the example project using Arduino MEGA2560:
+-	50 ---- MISO
+-	51 ---- MOSI
+-	52 ---- SCK
+-	7   ---- SS
+
+2.	I2C connection:
+Share reuse I2C3:
+-	PA8 --- SCL
+-	PC9 --- SDA
+
+3.	Motion Sensor:
+https://learn.adafruit.com/pir-passive-infrared-proximity-motion-sensor/overview
+-	PC8 --- DigitOut
+-	GND --- GND
+-	5V --- 5V

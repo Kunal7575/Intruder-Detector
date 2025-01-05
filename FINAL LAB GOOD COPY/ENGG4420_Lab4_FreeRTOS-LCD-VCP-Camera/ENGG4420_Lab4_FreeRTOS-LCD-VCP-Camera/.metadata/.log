@@ -1,0 +1,33 @@
+!SESSION 2024-11-07 08:44:03.426 -----------------------------------------------
+eclipse.buildId=Version 1.13.1
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_CA
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-11-07 08:44:14.546
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-11-07 08:44:14.566
+!MESSAGE Log4j2 initialized with config file H:\ENGG4420\Lab4\ENGG4420_Lab4_FreeRTOS-LCD-VCP-Camera\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-11-07 08:44:21.820
+!MESSAGE Started RMI Server, listening on port 41338
+
+!ENTRY org.eclipse.core.resources 4 368 2024-11-07 08:46:28.102
+!MESSAGE Resource '/ENGG4420_Lab4_FreeRTOS-LCD-VCP-Camera' does not exist.
+!STACK 0
+java.lang.Exception: Resource '/ENGG4420_Lab4_FreeRTOS-LCD-VCP-Camera' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:330)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:204)
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.getDescription(Project.java:397)
+	at com.st.stm32cube.common.projectcreation.core.ProjectUtilities.hasProjectNature(ProjectUtilities.java:164)
+	at com.st.stm32cube.common.projectcreation.core.ProjectUtilities.hasProjectNature(ProjectUtilities.java:220)
+	at com.st.stm32cube.ide.mcu.analytics.core.MCUAnalyticsUtils.getRootProject(MCUAnalyticsUtils.java:176)
+	at com.st.stm32cube.ide.mcu.analytics.core.MCUAnalyticsRegister.send(MCUAnalyticsRegister.java:467)
+	at com.st.stm32cube.ide.mcu.analytics.core.MCUAnalyticsRegister.send(MCUAnalyticsRegister.java:350)
+	at com.st.stm32cube.ide.mcu.analytics.core.MCUAnalytics.lambda$1(MCUAnalytics.java:193)
+	at java.base/java.lang.Thread.run(Thread.java:833)
